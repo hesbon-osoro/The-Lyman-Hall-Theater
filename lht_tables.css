@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 3
+
+   Calendar Style Sheet
+   Author: Hesbon Osoro
+   Date: 12/9/22 
+
+   Filename:   lht_tables.css
+
+*/
+
+@media only screen and (max-width: 640px) {
+  table,
+  tbody,
+  tr,
+  td,
+  th,
+  caption {
+    display: block;
+  }
+
+  thead,
+  td h1 {
+    display: none;
+  }
+
+  table caption {
+    color: white;
+    background: dimgray;
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  table.calendar td {
+    border: 1px dotted gray;
+    color: rgb(11, 12, 145);
+    position: relative;
+    padding-left: 40%;
+    min-height: 40px;
+  }
+
+  table.calendar tr:nth-of-type(odd) {
+    background-color: rgb(255, 235, 178);
+    border: 2px solid gray;
+  }
+
+  [data-date]:before {
+    content: attr(data-date);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    padding: 5px;
+  }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+
+@media only screen and (min-width: 641px) {
+  table.calendar {
+    background-image: url(lht_photo1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+    border: 6px double rgb(154, 64, 3);
+    border-collapse: collapse;
+    margin: 20px auto;
+    table-layout: fixed;
+    width: 85%;
+  }
+
+  table.calendar th,
+  td {
+    border: 1px solid gray;
+    font-size: 0.85em;
+    font-weight: normal;
+    padding: 5px;
+    text-align: top;
+    width: 14.28%;
+    word-wrap: break-word;
+  }
+
+  table.calendar td[data-date~="Jan"],
+  table.calendar td[data-date~="Mar"] {
+    background-color: rgba(171, 171, 171, 0.6);
+    color: rgb(11, 12, 145);
+  }
+
+  td[data-date~="Feb"] {
+    background-color: rgba(232, 214, 148, 0.6);
+    box-shadow: 0px 0px 20px gray;
+    color: rgb(11, 12, 145);
+  }
+
+  table caption {
+    caption-side: top;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+  }
+
+  thead th {
+    background-color: rgb(154, 64, 3);
+    color: white;
+  }
+}

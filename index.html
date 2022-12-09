@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 6
+      Case Problem 3
+
+      LHT February Schedule
+      Author: Hesbon Osoro
+      Date: 12/9/22 
+
+      Filename:   lht_feb.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lyman Hall Theater in February</title>
+    <link href="lht_reset.css" rel="stylesheet" />
+    <link href="lht_styles.css" rel="stylesheet" />
+    <link href="lht_tables.css" rel="stylesheet" />
+    <link href="lht_columns.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <img src="lht_logo.png" alt="The Lyman Hall Theater" id="logoimg" />
+      <nav>
+        <a id="navicon" href="#"><img src="lht_navicon.png" alt="" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Box Office</a></li>
+          <li><a href="#">Facilities</a></li>
+          <li><a href="#">Directions</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h1>Coming Up at the Lyman Hall Theater</h1>
+      <p>
+        February will be another banner month at the Lyman Hall Theatre with
+        three performances of the Tony Award winning musical,
+        <em>West Side Story</em> by the Broadway Touring Company. Tickets are
+        going fast, so order yours today.
+      </p>
+
+      <p>
+        Celebrate Valentine's Day with the Chamberlain Symphony and their
+        special selection of classical music for lovers. Later that week,
+        exercise your mind by attending the Charles Dickens classic,
+        <em>The Mystery of Edwin Drood</em>. Can you solve Dickens' unfinished
+        mystery?
+      </p>
+
+      <p>
+        Jazz lovers have a lot to celebrate in February with a visit from the
+        <em>Jazz Masters</em> on February 21st, and then on February 24th, enjoy
+        the music of The Duke with an <em>Ellington Tribute</em>
+        performed by the Jazz Company of Kansas City.
+      </p>
+
+      <p>
+        Pins, bottles, plates, and chairs are flying at the Chamberlain Civic
+        Center in February. The <em>Taiwan Acrobats</em> return on February 2nd
+        with another amazing performance. We close out the month with a visit
+        from the <em>Madtown Jugglers</em> and their unique blend of comedy,
+        juggling, and madness.
+      </p>
+
+      <p>
+        Enjoy a classical brunch every Sunday in February with music provided by
+        the <em>Carson Quartet</em>. Seating is limited, so please order your
+        table in advance.
+      </p>
+    </article>
+    <table class="calendar">
+      <caption>
+        February 2018 Calendar
+      </caption>
+      <colgroup>
+        <col class="weekdays" span="5" />
+        <col class="weekends" span="2" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-date="Sun, Jan 2, 2018">
+            <h1>January 28</h1>
+            <dl>
+              <dt>Caron Quartet</dt>
+              <dd>1 pm</dd>
+              <dd>$12</dd>
+            </dl>
+          </td>
+          <td data-date="Mon, Jan 29, 2018">
+            <h1>January 29</h1>
+            <dl>
+              <dt>Harlem Choir</dt>
+              <dd>8 pm</dd>
+              <dd>$18/$24/$32</dd>
+            </dl>
+          </td>
+          <td data-date="Tue, Jan 30, 2018">
+            <h1>January 30</h1>
+          </td>
+          <td data-date="Wed, Jan 31, 2018">
+            <h1>January 31</h1>
+          </td>
+          <td data-date="Thu, Feb 1, 2018">
+            <h1>February 1</h1>
+          </td>
+          <td data-date="Fri, Feb 2, 2018">
+            <h1>February 2</h1>
+            <dl>
+              <dt>Taiwan Acrobats</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$32/$48</dd>
+            </dl>
+          </td>
+          <td data-date="Sat, Feb 3, 2018">
+            <h1>February 3</h1>
+            <dl>
+              <dt>Joey Gallway</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$32/$48</dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td data-date="Sun, Feb 4, 2018">
+            <h1>February 4</h1>
+            <dl>
+              <dt>Carson Quartet</dt>
+              <dd>1 pm</dd>
+              <dd>$12</dd>
+            </dl>
+          </td>
+          <td data-date="Mon, Feb 5, 2018">
+            <h1>February 5</h1>
+          </td>
+          <td data-date="Tue, Feb 6, 2018">
+            <h1>February 6</h1>
+            <dl>
+              <dt>Ralph Williams</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$36/$42</dd>
+            </dl>
+          </td>
+          <td data-date="Wed, Feb 7, 2018">
+            <h1>February 7</h1>
+          </td>
+          <td data-date="Thu, Feb 8, 2018">
+            <h1>February 8</h1>
+            <dl>
+              <dt>West Side Story</dt>
+              <dd>7 pm</dd>
+              <dd>$36/$48/$64</dd>
+            </dl>
+          </td>
+          <td data-date="Fri, Feb 9, 2018">
+            <h1>February 9</h1>
+            <dl>
+              <dt>West Side Story</dt>
+              <dd>7 pm</dd>
+              <dd>$36/$48/$64</dd>
+            </dl>
+          </td>
+          <td data-date="Sat, Feb 10, 2018">
+            <h1>February 10</h1>
+            <dl>
+              <dt>West Side Story</dt>
+              <dd>7 pm</dd>
+              <dd>$36/$48/$64</dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td data-date="Sun, Feb 11, 2018">
+            <h1>February 11</h1>
+            <dl>
+              <dt>Carson Quartet</dt>
+              <dd>1 pm</dd>
+              <dd>$12</dd>
+            </dl>
+          </td>
+          <td data-date="Mon, Feb 12, 2018">
+            <h1>February 12</h1>
+          </td>
+          <td data-date="Tue, Feb 13, 2018">
+            <h1>February 13</h1>
+          </td>
+          <td data-date="Wed, Feb 14, 2018">
+            <h1>February 14</h1>
+            <dl>
+              <dt>Chamberlain Symphony</dt>
+              <dd>8 pm</dd>
+              <dd>$18/$24/$32</dd>
+            </dl>
+          </td>
+          <td data-date="Thu, Feb 15, 2018">
+            <h1>February 15</h1>
+          </td>
+          <td data-date="Fri, Feb 16, 2018">
+            <h1>February 16</h1>
+            <dl>
+              <dt>Edwin Drood</dt>
+              <dd>8 pm</dd>
+              <dd>$36/$48/$58</dd>
+            </dl>
+          </td>
+          <td data-date="Sat, Feb 17, 2018">
+            <h1>February 17</h1>
+            <dl>
+              <dt>Edwin Drood</dt>
+              <dd>8 pm</dd>
+              <dd>$36/$48/$58</dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td data-date="Sun, Feb 18, 2018">
+            <h1>February 18</h1>
+            <dl>
+              <dt>Carson Quartet</dt>
+              <dd>1 pm</dd>
+              <dd>$12</dd>
+            </dl>
+          </td>
+          <td data-date="Mon, Feb 19, 2018">
+            <h1>February 19</h1>
+          </td>
+          <td data-date="Tue, Feb 20, 2018">
+            <h1>February 20</h1>
+          </td>
+          <td data-date="Wed, Feb 21, 2018">
+            <h1>February 21</h1>
+            <dl>
+              <dt>Jazz Masters</dt>
+              <dd>8 pm</dd>
+              <dd>$18/$24/$32</dd>
+            </dl>
+          </td>
+          <td data-date="Thu, Feb 22, 2018">
+            <h1>February 22</h1>
+          </td>
+          <td data-date="Fri, Feb 23, 2018">
+            <h1>February 23</h1>
+            <dl>
+              <dt>The Yearling</dt>
+              <dd>7 pm</dd>
+              <dd>$12/$18/$24</dd>
+            </dl>
+          </td>
+          <td data-date="Sat, Feb 24, 2018">
+            <h1>February 24</h1>
+            <dl>
+              <dt>An Ellington Tribute</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$38/$48</dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td data-date="Sun, Feb 25, 2018">
+            <h1>February 25</h1>
+            <dl>
+              <dt>Carson Quartet</dt>
+              <dd>1 pm</dd>
+              <dd>$12</dd>
+            </dl>
+          </td>
+          <td data-date="Mon, Feb 26, 2018">
+            <h1>February 26</h1>
+          </td>
+          <td data-date="Tue, Feb 27, 2018">
+            <h1>February 27</h1>
+          </td>
+          <td data-date="Wed, Feb 28, 2018">
+            <h1>February 28</h1>
+            <dl>
+              <dt>Madtown Jugglers</dt>
+              <dd>8 pm</dd>
+              <dd>$12/$16/$20</dd>
+            </dl>
+          </td>
+          <td data-date="Thu, Mar 1, 2018">
+            <h1>March 1</h1>
+            <dl>
+              <dt>Othello</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$36/$48</dd>
+            </dl>
+          </td>
+          <td data-date="Fri, Mar 2, 2018">
+            <h1>March 2</h1>
+            <dl>
+              <dt>Othello</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$36/$48</dd>
+            </dl>
+          </td>
+          <td data-date="Sat, Mar 3, 2018">
+            <h1>March 3</h1>
+            <dl>
+              <dt>Othello</dt>
+              <dd>8 pm</dd>
+              <dd>$24/$36/$48</dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Visitors</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Parking</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Box Office</a></li>
+          <li><a href="#">Group Rates</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Foundation</a></li>
+          <li><a href="#">Board</a></li>
+          <li><a href="#">Donations</a></li>
+          <li><a href="#">Volunteering</a></li>
+        </ul>
+      </nav>
+      <section>
+        The Lyman Hall Theater<br />
+        414 Leeward Drive<br />
+        Brookhaven, GA 30319<br /><br />
+        Office: (404) 555 - 4140<br />
+        Box Office: (404) 555 - 4144
+      </section>
+    </footer>
+  </body>
+</html>
